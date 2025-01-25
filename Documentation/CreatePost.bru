@@ -1,0 +1,19 @@
+meta {
+  name: CreatePost
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{API_URL}}/posts
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "First!",
+    "content": "This is my first post.",
+    "authorId": "919cf9fb-d6ba-4b5e-b4c2-adcce78c94ba"
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: CreateComment
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{API_URL}}/posts/:id/comments
+  body: json
+  auth: none
+}
+
+params:path {
+  id: 2848c63a-9df4-4a97-8b0a-cd0f2ebf5ac6
+}
+
+body:json {
+  {
+    "content": "This is my last comment."
+  }
+}
